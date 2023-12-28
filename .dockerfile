@@ -25,10 +25,10 @@ EXPOSE 8888
 # CMD ["jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--no-# browser"]
 
 # new attempt  - bare code w/ R kernel notebook
-# Run Jupyter notebook when the container launches
+# Runs Jupyter notebook when the container launches
 # CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root", # "--NotebookApp.token=''", "--NotebookApp.password=''"]
 # Previous steps...
 
 # new run code
-# Run Jupyter notebook when the container launches
+# Runs Jupyter notebook when the container launches
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
