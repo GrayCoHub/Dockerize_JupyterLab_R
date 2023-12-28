@@ -29,6 +29,9 @@ EXPOSE 8888
 # CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root", # "--NotebookApp.token=''", "--NotebookApp.password=''"]
 # Previous steps...
 
-# new run code
+# Got a container built.  But has the Jupter login page 
 # Runs Jupyter notebook when the container launches
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+#  CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+
+# Nother change to Dockerfile
+CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''", "--NotebookApp.disable_check_xsrf=True"]
